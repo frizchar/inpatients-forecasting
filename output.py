@@ -14,20 +14,14 @@ def output_to_excel(df, mape, horizon_value,
             return 'hospital_1'
         elif hospital == '2':
             return 'hospital_2'
-        elif hospital == '3':
-            return 'hospital_3'
-        elif hospital == '4':
-            return 'hospital_4'
-        elif hospital == '5':
-            return 'hospital_5'
         else:
             return "-"
 
     def create_filename_prefix(run_mode):
         if run_mode == 'test':
-            return '_test_paramenontes_'
+            return '_test_inpatients_'
         elif run_mode in ['prod','hybrid']:
-            return '_prod_paramenontes_'
+            return '_prod_inpatients_'
         else:
             return "wrong 'run_mode' value"
 
