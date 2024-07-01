@@ -10,3 +10,5 @@ Here are the user input parameters :
 - HOSPITAL_list : determines hospital IDs of the hospitals whose inpatients the code forecasts ( values : _1_, _2_ )
 - HORIZON_VALUE : determines the # of days for which the code forecasts the inpatients, namely the _prediction horizon_ ( in our example value is _14_ )
 - CAP_TYPE : determines the type of cap used in the code for the maximum number of inpatients allowed by the algorithm ( values : 'soft', 'hard' )
+
+The required packages are included in file _requirements.txt_.
