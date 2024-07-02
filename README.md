@@ -5,7 +5,7 @@ The code may be modified to process data of any number of hospitals (_see 'user 
 To implement the forecasting we use the $\color{blue}prophet$ algorithm.
 
 ### Input files:
-The code loads (_n_) .xlsx files, each one containing data for each hospital. <br>
+The code loads (_n_) ```.xlsx``` files, each one containing data for each hospital. <br>
 Each .xlsx file includes the columns: **ds := _date_** and **y := _number of daily inpatients_**.<br>
 In this implementation _n = 2_.
 
@@ -16,8 +16,9 @@ Here are the user input parameters that are determined in module _main.py_ :
 - HORIZON_VALUE : determines the # of days for which the code forecasts the inpatients, namely the _prediction horizon_ ( in our example value is _14_ )
 - CAP_TYPE : determines the type of cap used in the code for the maximum number of inpatients allowed by the algorithm ( values : 'soft', 'hard' )
 
-### Required python packages:
-The required packages are included in file _requirements.txt_.
+### Dependencies:
+The required packages are included in file ```requirements.txt```.<br>
+The code is implemented in python ```ver 3.9```.
 
 ### Code diagram:
 Below is the code diagram displaying the relationships between its modules:
