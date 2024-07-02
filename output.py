@@ -9,7 +9,7 @@ def output_to_excel(df, mape, horizon_value,
                     df_train_val, hospital, run_mode, cap_type,
                     min_test_date, max_test_date):
 
-    def generate_hospital_name(hospital):
+    def generate_hospital_name(hospital: str):
         if hospital == '1':
             return 'hospital_1'
         elif hospital == '2':
@@ -17,7 +17,7 @@ def output_to_excel(df, mape, horizon_value,
         else:
             return "-"
 
-    def create_filename_prefix(run_mode):
+    def create_filename_prefix(run_mode: str):
         if run_mode == 'test':
             return '_test_inpatients_'
         elif run_mode in ['prod','hybrid']:
