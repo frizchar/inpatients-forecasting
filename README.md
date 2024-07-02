@@ -13,7 +13,7 @@ Here are the user input parameters :
 
 The required packages are included in file _requirements.txt_.
 
-Below is the code diagram displaying the connection of the python modules:
+Below is the code diagram displaying the connection between the python modules:
 ```mermaid
 graph TD;
     main-->engine;
