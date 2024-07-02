@@ -10,7 +10,7 @@ Each .xlsx file includes the columns: **ds := _date_** and **y := _number of dai
 In this implementation _n = 2_.
 
 ### User input parameters:
-Here are the user input parameters that are determined in module _main.py_ :
+Here are the user input parameters that are determined in module ```main.py```:
 - RUN_MODE : determines if the mode of the code ( values _'prod'_, _'test'_ or _'hybrid'_ )
 - HOSPITAL_list : list holding the hospital IDs of the hospitals whose inpatients the code forecasts ( values : _1_, _2_ )
 - HORIZON_VALUE : determines the # of days for which the code forecasts the inpatients, namely the _prediction horizon_ ( in our example value is _14_ )
