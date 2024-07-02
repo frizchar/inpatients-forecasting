@@ -1,3 +1,5 @@
+# read the .xlsx file holding the hospital data of (date, number of inpatients)
+
 import pandas as pd
 
 
