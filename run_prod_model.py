@@ -58,10 +58,8 @@ def run_model(hospital: str, horizon_value_arg: int, initial_argument_value_arg:
         'growth': ['logistic'],
         'seasonality_mode': ['multiplicative'],
         'holidays_mode': ['multiplicative'],
-        'changepoint_prior_scale': [0.01, 0.025, 0.04, 0.05, 0.1, 0.5],
-        # 'changepoint_prior_scale': [0.01],
-        'seasonality_prior_scale': [1.5, 2.2, 4.0, 6.0, 7.0, 8.0, 9.0, 10.0],
-        # 'seasonality_prior_scale': [1.5],
+        'changepoint_prior_scale': [0.01, 0.025, 0.04, 0.05, 0.1, 0.5],        
+        'seasonality_prior_scale': [1.5, 2.2, 4.0, 6.0, 7.0, 8.0, 9.0, 10.0],        
         'daily_seasonality': [True],
     }
 
