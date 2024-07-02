@@ -1,3 +1,5 @@
+# run prophet in production mode
+
 import numpy as np
 import pandas as pd
 from prophet import Prophet
