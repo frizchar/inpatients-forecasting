@@ -1,3 +1,5 @@
+# run prophet in test mode
+
 import numpy as np
 import pandas as pd
 from prophet import Prophet
