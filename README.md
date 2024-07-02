@@ -1,11 +1,12 @@
 # inpatients_forecasting
 ### Description:
-We are forecasting the daily number of hospital inpatients **_y_** of hospitals **[hospital_1, hospital_2]** for **_h_** days into the future (_prediction horizon_).
+We are forecasting the daily number of hospital inpatients **_y_** of hospitals **[hospital_1, hospital_2]** for **_h_** days into the future (_forecast horizon=h_).
+The code may be modified to process data of any number of hospitals (_see 'user input parameters' below_).<br>
 To implement the forecasting we use the $\color{blue}prophet$ algorithm.
 
 ### Input files:
-The code loads (_n_) .xlsx files, each one containing data for each hospital. Each .xlsx file includes the columns:
-<br> **ds := _date_** and **y := _number of inpatients_**.<br>
+The code loads (_n_) .xlsx files, each one containing data for each hospital. <br>
+Each .xlsx file includes the columns: **ds := _date_** and **y := _number of daily inpatients_**.<br>
 In this implementation _n = 2_.
 
 ### User input parameters:
