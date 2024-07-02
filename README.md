@@ -1,5 +1,5 @@
 # inpatients_forecasting
-We are forecasting the number of hospital inpatients **_y_** of hospitals **(hospital_1, hospital_2)** for a number of days (prediction horizon) **_h_**.
+We are forecasting the number of hospital inpatients **_y_** of hospitals **[hospital_1, hospital_2]** for a number of days (prediction horizon) **_h_**.
 
 The $\color{blue}prophet$ algorithm is implemented on a dataset containing the columns **ds := _date_** and **y := _number of inpatients_**.
 
