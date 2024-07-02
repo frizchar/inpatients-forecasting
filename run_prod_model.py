@@ -6,7 +6,7 @@ import itertools
 import warnings
 import logging
 
-import merge_data
+import fetch_data
 
 
 warnings.filterwarnings('ignore')
@@ -18,7 +18,7 @@ logger.setLevel(logging.CRITICAL)
 
 def run_model(hospital, horizon_value_arg, initial_argument_value_arg, cap_type):
     # fetch the final dataset
-    df = merge_data.create_final_dataset(hospital)
+    df = fetch_data.pull_dataset(hospital)
     print('df.shape :\n', df.shape)
     print("\ndf data types :\n", df.dtypes)
     print("\ndf head :\n", df.head())
