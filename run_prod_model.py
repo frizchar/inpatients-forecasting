@@ -18,7 +18,7 @@ logger.propagate = False
 logger.setLevel(logging.CRITICAL)
 
 
-def run_model(hospital, horizon_value_arg: int, initial_argument_value_arg: int, cap_type: str):
+def run_model(hospital: str, horizon_value_arg: int, initial_argument_value_arg: int, cap_type: str):
     # fetch the final dataset
     df = fetch_data.pull_dataset(hospital)
     print('df.shape :\n', df.shape)
