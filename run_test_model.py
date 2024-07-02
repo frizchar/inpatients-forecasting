@@ -37,8 +37,6 @@ def run_model(hospital: str, horizon_value_arg: int, initial_argument_value_arg:
     print("\n\033[94mtail of reindexed data :\n", df.tail(), "\033[00m")
 
     df['weekday'] = df['ds'].dt.dayofweek  # add additional regressor 'weekday'
-    # df['month'] = df['ds'].dt.month  # add additional regressor 'month'
-    # df['week'] = df['ds'].dt.isocalendar().week  # add additional regressor 'week'
 
     # define function that yields max value of the following datasets: df, future (see further down for future)
     if cap_type == 'hard':
@@ -58,10 +56,8 @@ def run_model(hospital: str, horizon_value_arg: int, initial_argument_value_arg:
         'growth': ['logistic'],
         'seasonality_mode': ['multiplicative'],
         'holidays_mode': ['multiplicative'],
-        'changepoint_prior_scale': [0.01],  # [0.01, 0.025, 0.04, 0.05, 0.1, 0.5],
-        # 'changepoint_prior_scale': [0.01],
-        'seasonality_prior_scale': [8.0],  # [1.5, 2.2, 4.0, 6.0, 7.0, 8.0, 9.0, 10.0],
-        # 'seasonality_prior_scale': [1.5],
+        'changepoint_prior_scale': [0.01, 0.025, 0.04, 0.05, 0.1, 0.5],
+        'seasonality_prior_scale': [1.5, 2.2, 4.0, 6.0, 7.0, 8.0, 9.0, 10.0],
         'daily_seasonality': [True],
     }
 
@@ -92,8 +88,6 @@ def run_model(hospital: str, horizon_value_arg: int, initial_argument_value_arg:
         m = Prophet(**params)  # instantiate Prophet using params
         m.add_country_holidays(country_name='GR')  # add Greek holidays
         m.add_regressor('weekday')  # add to Prophet the additional regressor 'weekday'
-    #    m.add_regressor('month')  # add to Prophet the additional regressor 'month'
-    #    m.add_regressor('week')  # add to Prophet the additional regressor 'week'
         m.fit(df_train_val)  # fit model on train-validate set
         df_cv = cross_validation(m, initial=initial_argument, period=period_argument, horizon=horizon_argument,
                                  parallel="threads")
