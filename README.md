@@ -21,7 +21,7 @@ The required packages are included in file ```requirements.txt```.<br>
 Python interpreter version used for this project: **3.9.4**
 
 ### Code description:
-Following are short descriptions of each python module used in the code:
+Following are short descriptions of the python modules used in the code:
 
 - ```main.py```: defines the input parameters described above and then invokes module ```engine.py```
 - ```engine.py```: controls the code flow, depending on the selected values of the input parameters
