@@ -32,7 +32,7 @@ Following are short descriptions of the python modules used in the code:
 
 Below is the code diagram displaying the relationships between its modules:
 ```mermaid
-graph TD;
+graph LR;
     main-->engine;
     engine-->run_test_model;
     engine-->run_prod_model;
