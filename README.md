@@ -18,7 +18,7 @@ Here are the user input parameters that are determined in module ```main.py```:
 
 ### Dependencies:
 The required packages are included in file ```requirements.txt```.<br>
-The code is implemented in python ```ver 3.9```.
+The code is implemented using Python ```3.9```.
 
 ### Code diagram:
 Below is the code diagram displaying the relationships between its modules:
