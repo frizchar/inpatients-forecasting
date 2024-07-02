@@ -7,7 +7,7 @@ The code loads (_n_) .xlsx files, each one containing data for each hospital. In
 
 Here are the user input parameters :
 - RUN_MODE : determines if the mode of the code ( values _'prod'_, _'test'_ or _'hybrid'_ )
-- HOSPITAL_list : a list of the hospital IDs of the hospitals whose inpatients the code forecasts ( values : _1_, _2_ )
+- HOSPITAL_list : list holding the hospital IDs of the hospitals whose inpatients the code forecasts ( values : _1_, _2_ )
 - HORIZON_VALUE : determines the # of days for which the code forecasts the inpatients, namely the _prediction horizon_ ( in our example value is _14_ )
 - CAP_TYPE : determines the type of cap used in the code for the maximum number of inpatients allowed by the algorithm ( values : 'soft', 'hard' )
 
