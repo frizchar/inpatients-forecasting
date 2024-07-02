@@ -1,7 +1,7 @@
 # inpatients_forecasting
 ### Description:
 We are forecasting the daily number of hospital inpatients **_y_** of hospitals **[hospital_1, hospital_2]** for **_h_** days into the future (_forecast horizon=h_).
-The code may be modified to process data of any number of hospitals (_see 'user input parameters' below_).<br>
+The code may be modified to process data of any number of hospitals (_see 'input parameters' below_).<br>
 The code is written in Python and the forecasting is implemented with the $\color{blue}prophet$ algorithm.
 
 ### Input files:
