@@ -6,7 +6,7 @@ The code is written in Python and the forecasting is implemented with the $\colo
 
 ### Input files:
 The code loads (_n_) ```.xlsx``` files, each one containing data for each hospital. <br>
-Each .xlsx file includes the columns: **ds := _date_** and **y := _number of daily inpatients_**.<br>
+Each ```.xlsx``` file includes the columns: **ds := _date_** and **y := _number of daily inpatients_**.<br>
 For this implementation _n = 2_.
 
 ### Input parameters:
