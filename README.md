@@ -9,8 +9,8 @@ The code loads (_n_) ```.xlsx``` files, each one containing data for each hospit
 Each .xlsx file includes the columns: **ds := _date_** and **y := _number of daily inpatients_**.<br>
 In this implementation _n = 2_.
 
-### User input parameters:
-Here are the user input parameters that are determined in module ```main.py```:
+### Input parameters:
+Here are the input parameters that are determined in module ```main.py```:
 - RUN_MODE : determines if the mode of the code ( values _'prod'_, _'test'_ or _'hybrid'_ )
 - HOSPITAL_list : list holding the hospital IDs of the hospitals whose inpatients the code forecasts ( values : _1_, _2_ )
 - HORIZON_VALUE : determines the # of days for which the code forecasts the inpatients, namely the _prediction horizon_ ( in our example value is _14_ )
@@ -20,7 +20,16 @@ Here are the user input parameters that are determined in module ```main.py```:
 The required packages are included in file ```requirements.txt```.<br>
 Python interpreter version used for this project: **3.9.4**
 
-### Code diagram:
+### Code description:
+Following are short descriptions of each python module used in the code:
+
+- ```main.py```: defines the input parameters described above and then invokes module ```engine.py```
+- ```engine.py```: controls the code flow, depending on the selected values of the input parameters
+- ```run_test_model.py```: runs prophet in test mode
+- ```run_prod_model.py```: runs prophet in production mode
+- ```fetch_data.py```: reads the input ```.xlsx``` files of each hospital
+- ```output.py```: stores results in relative folder path ```'./data_pool/'```
+
 Below is the code diagram displaying the relationships between its modules:
 ```mermaid
 graph TD;
