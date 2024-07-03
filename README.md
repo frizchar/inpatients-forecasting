@@ -16,7 +16,7 @@ Here are the input parameters that are determined in module ```main.py```:
     - _'test'_ : invokes module ```run_test_model.py```
     - _'hybrid'_ : invokes module ```run_test_model.py``` and then module ```run_prod_model.py```
 - HOSPITAL_list : list holding the hospital IDs of the hospitals whose data the code processes ( values : _1_, _2_ )
-- HORIZON_VALUE : determines the number of days for which the code forecasts the number of inpatients, namely the _forecast horizon_ ( in our example value is _14_ )
+- HORIZON_VALUE : determines the _forecast horizon_, namely the number of days for which the code forecasts the number of inpatients ( in our example value is _14_ )
 - CAP_TYPE : determines the type of cap used in the code for the maximum number of inpatients allowed by the algorithm ( values : _'soft'_, _'hard'_ )
 
 ### Dependencies:
