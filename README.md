@@ -18,8 +18,8 @@ Here are the input parameters that are determined in module ```main.py```:
 - HOSPITAL_list : list holding the hospital IDs of the hospitals whose data the code processes ( values : _1_, _2_ )
 - HORIZON_VALUE : determines the _forecast horizon_, namely the number of days for which the code forecasts the number of inpatients ( for our implementation we choose value HORIZON_VALUE = _14_ )
 - CAP_TYPE : shapes parameter [cap](https://facebook.github.io/prophet/docs/saturating_forecasts.html) that determines the maximum number of inpatients allowed by the algorithm and takes the following values:
-    -  _'soft'_:
-    -  _'hard'_:
+    -  _'hard'_: in this case cap = max(y) where y are the historical data
+    -  _'soft'_: in this case cap = max(y) + round(0.08*max(y)) where y are the historical data
 
 ### Dependencies:
 The required packages are included in file ```requirements.txt```.<br>
