@@ -11,7 +11,7 @@ For this implementation _n = 2_.
 
 ### Input parameters:
 Here are the input parameters that are determined in module ```main.py```:
-- RUN_MODE : determines the mode of the code taking the following values:
+- RUN_MODE : determines the mode of the code and takes the following values:
     - _'prod'_ : invokes module ```run_prod_model.py```
     - _'test'_ : invokes module ```run_test_model.py```
     - _'hybrid'_ : invokes module ```run_test_model.py``` and then module ```run_prod_model.py```
