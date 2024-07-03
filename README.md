@@ -1,15 +1,15 @@
 # inpatients_forecasting
-### Overview:
+### Overview
 We are forecasting the daily number of hospital inpatients **_y_** of hospitals **[hospital_1, hospital_2]** for **_h_** days into the future (_forecast horizon=h_).
 The code may be modified to process data of any number of hospitals (_see 'input parameters' below_).<br>
 The code is written in Python and the forecasting is implemented by using the [prophet](https://github.com/facebook/prophet/releases) algorithm.
 
-### Input files:
+### Input files
 The code loads (_n_) ```.xlsx``` files, each one containing data for each hospital. <br>
 Each ```.xlsx``` file includes columns **ds := _date_** and **y := _number of daily inpatients_**.<br>
 For this implementation _n = 2_.
 
-### Input parameters:
+### Input parameters
 Here are the input parameters that are determined in module ```main.py```:
 - RUN_MODE : determines the mode of the code and takes the following values:
     - _'prod'_ : invokes module ```run_prod_model.py```
@@ -21,11 +21,11 @@ Here are the input parameters that are determined in module ```main.py```:
     -  _'hard'_: in this case $cap = max(y)$, where $y$ are the historical data
     -  _'soft'_: in this case $cap = max(y) + round[0.08*max(y)]$, where $y$ are the historical data
 
-### Dependencies:
+### Dependencies
 The required packages are included in file ```requirements.txt```.<br>
 Python interpreter version used for this project: **3.9.4**
 
-### Code structure:
+### Code structure
 Following are descriptions of the python modules used in the code:
 
 - ```main.py```: defines the input parameters described above and then invokes module ```engine.py```
