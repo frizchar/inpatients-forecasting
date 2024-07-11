@@ -1,6 +1,6 @@
 # Forecasting the Number of Hospital Inpatients
 ### Overview
-We are forecasting the daily number of hospital inpatients **_y_** of hospitals **[hospital_1, hospital_2]** for **_h_** days into the future (_forecast horizon=h_).
+We are forecasting the number of daily hospital inpatients **_y_** of hospitals **[hospital_1, hospital_2]** for **_h_** days into the future (_forecast horizon=h_).
 The code may be modified to process data of any number of hospitals (_see 'input parameters' below_).<br>
 The code is written in Python and the forecasting is implemented by using the [prophet](https://github.com/facebook/prophet/releases) algorithm.
 
